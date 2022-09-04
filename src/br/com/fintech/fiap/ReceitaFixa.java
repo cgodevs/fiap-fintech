@@ -1,9 +1,19 @@
 package br.com.fiap.fintech;
 
 public class ReceitaFixa extends Receita {
+	private static final long serialVersionUID = 1L;
 	private double valorFixo;
 	private int periodicidade;
 	private int[] diaGanhoDefinidos;
+	
+	public ReceitaFixa() {}
+	
+	public ReceitaFixa(double valorFixo, int periodicidade, int[] diaGanhoDefinidos) {
+		super();
+		this.valorFixo = valorFixo;
+		this.periodicidade = periodicidade;
+		this.diaGanhoDefinidos = diaGanhoDefinidos;
+	}
 	
 	public double getValorFixo() {
 		return valorFixo;

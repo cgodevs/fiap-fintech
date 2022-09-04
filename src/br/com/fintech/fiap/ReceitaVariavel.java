@@ -1,10 +1,22 @@
 package br.com.fiap.fintech;
 
-public class ReceitaVariavel {
+public class ReceitaVariavel extends Receita {
+	private static final long serialVersionUID = 1L;
 	private double valorMinimo;
 	private double ultimoValorReceita;
 	private int periodicidade;
 	private int diaGanhoDefinidos;
+	
+	public ReceitaVariavel() {}
+	
+	public ReceitaVariavel(double valorMinimo, double ultimoValorReceita, int periodicidade, int diaGanhoDefinidos) {
+		super();
+		this.valorMinimo = valorMinimo;
+		this.ultimoValorReceita = ultimoValorReceita;
+		this.periodicidade = periodicidade;
+		this.diaGanhoDefinidos = diaGanhoDefinidos;
+	}
+	
 	public double getValorMinimo() {
 		return valorMinimo;
 	}
@@ -29,5 +41,4 @@ public class ReceitaVariavel {
 	public void setDiaGanhoDefinidos(int diaGanhoDefinidos) {
 		this.diaGanhoDefinidos = diaGanhoDefinidos;
 	}
-	
 }

@@ -5,11 +5,14 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public abstract class Receita implements Serializable {
+	private static final long serialVersionUID = 1L;
 	private String id;
 	private Date dataReceita;
 	private LocalDate dataRegistro;
 	private Categoria categoria;
 	private String descricao;
+	
+	public Receita() {}
 	
 	public void Receita(String id, Date dataReceita, Categoria categoria, String descricao) {
 		this.id = id;
@@ -19,8 +22,8 @@ public abstract class Receita implements Serializable {
 		this.descricao = descricao;
 	}
 	
-	public int getId() {
-		return id;
+	public String getId() {
+		return this.id;
 	}
 	public Date getDataReceita() {
 		return dataReceita;
