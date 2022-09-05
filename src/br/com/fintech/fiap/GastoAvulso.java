@@ -1,6 +1,9 @@
 package br.com.fintech.fiap;
 import java.time.LocalDate;
 
+/**
+ * Gasto inesperado... pneu furou, geladeira quebrou, precisou comprar mais um boneco do Lucas Neto pra filha que perdeu o segundo
+ * **/
 public class GastoAvulso extends Gasto {
 	private double valorGastoAvulso;
 

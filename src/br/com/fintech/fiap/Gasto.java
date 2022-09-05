@@ -1,9 +1,26 @@
 package br.com.fintech.fiap;
 import java.time.LocalDate;
 
+/**
+ * @author caroline.oliveira
+ * 
+ * @summary A classe Receita e suas subclasses reproduzem comportamento análogo ao desta documentação
+ *
+ */
 public abstract class Gasto{
 	private int id;
+	
+	/** A data real em que ocorreu um gasto, o usuário pode escolhê-la em um calendário, 
+	 * sendo anterior ou posterior à data atual em que usa o app para fazer o registro
+	 * Exemplos: 
+	 * - Usuário esqueceu de registrar um gasto no dia em que ocorreu e agora irá informar um dia no passado
+	 * - Usuário gostaria de planejar determinado gasto, que ocorrerá o futuro
+	 * **/
 	private LocalDate dataGasto;
+	
+	/** A data em que o usuário informa o registro, ou seja, o LocalDate do exato momento
+	 * em que usa o app para fazer o registro
+	 * **/
 	private LocalDate dataRegistro;
 	private Categoria categoria;
 	private String descricao;
