@@ -1,5 +1,8 @@
 package br.com.fintech.fiap;
 
+/**
+ * @author mateusfv
+ */
 public class Usuario {
 	//attributes
 	private String nome;

@@ -2,6 +2,9 @@ package br.com.fintech.fiap;
 
 import java.time.LocalDate;
 
+/**
+ * @author pedrohlucena
+ */
 public abstract class Receita  {
 	private int id;
 	private LocalDate dataReceita;

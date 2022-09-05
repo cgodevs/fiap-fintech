@@ -3,6 +3,10 @@ package br.com.fintech.fiap;
 import java.time.LocalDate;
 import java.util.Date;
 
+/**
+ * @author mateusfv
+ */
+
 public class Cartao {
 	//attributes
 	private long numeroCartao;
