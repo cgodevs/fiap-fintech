@@ -1,18 +1,19 @@
-package br.com.fiap.fintech;
+package br.com.fintech.fiap;
+
+import java.time.LocalDate;
 
 public class ReceitaFixa extends Receita {
-	private static final long serialVersionUID = 1L;
 	private double valorFixo;
 	private int periodicidade;
-	private int[] diaGanhoDefinidos;
+	private int[] diasGanhoDefinidos;
 	
 	public ReceitaFixa() {}
 	
-	public ReceitaFixa(double valorFixo, int periodicidade, int[] diaGanhoDefinidos) {
-		super();
+	public ReceitaFixa(int id, LocalDate dataReceita, Categoria categoria, String descricao, double valorFixo, int periodicidade, int[] diaGanhoDefinidos) {
+		super(id, dataReceita, categoria, descricao);
 		this.valorFixo = valorFixo;
 		this.periodicidade = periodicidade;
-		this.diaGanhoDefinidos = diaGanhoDefinidos;
+		this.diasGanhoDefinidos = diaGanhoDefinidos;
 	}
 	
 	public double getValorFixo() {
@@ -22,7 +23,7 @@ public class ReceitaFixa extends Receita {
 		return periodicidade;
 	}
 	public int[] getDiaCobrancaDefinidos() {
-		return diaGanhoDefinidos;
+		return diasGanhoDefinidos;
 	}
 	public void setValorFixo(double valorFixo) {
 		this.valorFixo = valorFixo;
@@ -31,6 +32,6 @@ public class ReceitaFixa extends Receita {
 		this.periodicidade = periodicidade;
 	}
 	public void setDiaCobrancaDefinidos(int[] diaCobrancaDefinidos) {
-		this.diaGanhoDefinidos = diaCobrancaDefinidos;
+		this.diasGanhoDefinidos = diaCobrancaDefinidos;
 	}
 }

@@ -3,10 +3,15 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class GastoFixo extends Gasto {
-	private double valorGastoAvulso;
+	private double valorFixo;
+	private int periodicidade;
+	private int[] diaCobrancaDefinidos;
 	
-	public GastoFixo(Date dataGasto, Categoria categoria, String descricao, double valorGastoAvulso) {
+	public GastoFixo() {}
+	public GastoFixo(LocalDate dataGasto, Categoria categoria, String descricao, double valorFixo, int periodicidade, int[] diaCobrancaDefinidos) {
 		super(dataGasto, categoria, descricao);
-		this.valorGastoAvulso = valorGastoAvulso;
+		this.valorFixo = valorFixo;
+		this.periodicidade = periodicidade;
+		this.diaCobrancaDefinidos = diaCobrancaDefinidos;
 	}
 }

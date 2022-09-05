@@ -1,18 +1,15 @@
 package br.com.fintech.fiap;
 import java.time.LocalDate;
-import java.util.Date;
 
 public class GastoVariavel extends Gasto{
 	private double valorMinimo;
 	private double ultimoValorGasto;
 	private int periodicidade;
+	private int[] diaCobrancaDefinidos;
 	
-	public GastoVariavel(Date dataGasto, //super
-			Categoria categoria,  //super
-			String descricao,  //super
-			double valorMinimo, 
-			double ultimoValorGasto, 
-			int periodicidade) {
+	public GastoVariavel() {}
+	public GastoVariavel(LocalDate dataGasto, Categoria categoria, String descricao,  //super
+			double valorMinimo, double ultimoValorGasto, int periodicidade) {
 		super(dataGasto, categoria, descricao);
 		this.valorMinimo = valorMinimo;
 		this.ultimoValorGasto = ultimoValorGasto;
@@ -43,5 +40,4 @@ public class GastoVariavel extends Gasto{
 	public void setDiaCobrancaDefinidos(int[] diaCobrancaDefinidos) {
 		this.diaCobrancaDefinidos = diaCobrancaDefinidos;
 	}
-	private int[] diaCobrancaDefinidos;	
 }

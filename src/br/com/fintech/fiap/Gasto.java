@@ -1,16 +1,15 @@
 package br.com.fintech.fiap;
-import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
 
 public abstract class Gasto{
 	private int id;
-	private Date dataGasto;
+	private LocalDate dataGasto;
 	private LocalDate dataRegistro;
 	private Categoria categoria;
 	private String descricao;
 	
-	public Gasto(Date dataGasto, Categoria categoria, String descricao) {
+	public Gasto() {}
+	public Gasto(LocalDate dataGasto, Categoria categoria, String descricao) {
 		this.dataGasto = dataGasto;
 		this.dataRegistro = LocalDate.now();
 		this.categoria = categoria;
@@ -20,10 +19,10 @@ public abstract class Gasto{
 	public int getId() {
 		return id;
 	}
-	public Date getDataGasto() {
+	public LocalDate getDataGasto() {
 		return dataGasto;
 	}
-	public void setDataGasto(Date dataGasto) {
+	public void setDataGasto(LocalDate dataGasto) {
 		this.dataGasto = dataGasto;
 	}
 	public LocalDate getDataRegistro() {
@@ -41,6 +40,10 @@ public abstract class Gasto{
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}	
-	public void registrar(Usuario usuario) {} //TODO implementar
-	public Gasto consultar(int id) {}	 //TODO implementar
+	public void registrarGasto() {
+		return;  	//TODO implementar
+	} 
+	public Gasto consultar(int id) {
+		return null;	//TODO implementar
+	}	 
 }
