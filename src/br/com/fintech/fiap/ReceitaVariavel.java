@@ -1,21 +1,22 @@
-package br.com.fintech.fiap;
+package br.com.fiap.fintech;
 
 import java.time.LocalDate;
 
 public class ReceitaVariavel extends Receita {
+	private static final long serialVersionUID = 1L;
 	private double valorMinimo;
 	private double ultimoValorReceita;
 	private int periodicidade;
-	private int diasGanhoDefinidos;
+	private int[] diaGanhoDefinidos;
 	
 	public ReceitaVariavel() {}
 	
-	public ReceitaVariavel(int id, LocalDate dataReceita, Categoria categoria, String descricao, double valorMinimo, double ultimoValorReceita, int periodicidade, int diaGanhoDefinidos) {
+	public ReceitaVariavel(int id, LocalDate dataReceita, Categoria categoria, String descricao, double valorMinimo, double ultimoValorReceita, int periodicidade, int[] diaGanhoDefinidos) {
 		super(id, dataReceita, categoria, descricao);
 		this.valorMinimo = valorMinimo;
 		this.ultimoValorReceita = ultimoValorReceita;
 		this.periodicidade = periodicidade;
-		this.diasGanhoDefinidos = diaGanhoDefinidos;
+		this.diaGanhoDefinidos = diaGanhoDefinidos;
 	}
 	
 	public double getValorMinimo() {
@@ -27,8 +28,8 @@ public class ReceitaVariavel extends Receita {
 	public int getPeriodicidade() {
 		return periodicidade;
 	}
-	public int getDiaGanhoDefinidos() {
-		return diasGanhoDefinidos;
+	public int[] getDiaGanhoDefinidos() {
+		return diaGanhoDefinidos;
 	}
 	public void setValorMinimo(double valorMinimo) {
 		this.valorMinimo = valorMinimo;
@@ -39,7 +40,7 @@ public class ReceitaVariavel extends Receita {
 	public void setPeriodicidade(int periodicidade) {
 		this.periodicidade = periodicidade;
 	}
-	public void setDiaGanhoDefinidos(int diaGanhoDefinidos) {
-		this.diasGanhoDefinidos = diaGanhoDefinidos;
+	public void setDiaGanhoDefinidos(int[] diaGanhoDefinidos) {
+		this.diaGanhoDefinidos = diaGanhoDefinidos;
 	}
 }

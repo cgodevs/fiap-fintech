@@ -1,13 +1,14 @@
-package br.com.fintech.fiap;
+package br.com.fiap.fintech;
 
 import java.time.LocalDate;
 
 public class ReceitaAvulsa extends Receita {
+	private static final long serialVersionUID = 1L;
 	private double valorAvulsoReceita;
 	
 	public ReceitaAvulsa() {}
 
-	public ReceitaAvulsa(int id, LocalDate dataReceita, Categoria categoria, String descricao,double valorAvulsoReceita) {
+	public ReceitaAvulsa(int id, LocalDate dataReceita, Categoria categoria, String descricao, double valorAvulsoReceita) {
 		super(id, dataReceita, categoria, descricao);
 		this.valorAvulsoReceita = valorAvulsoReceita;
 	}
