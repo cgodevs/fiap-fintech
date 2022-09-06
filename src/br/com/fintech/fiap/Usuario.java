@@ -1,8 +1,5 @@
-package br.com.fintech.fiap;
+package br.com.fiap.fintech;
 
-/**
- * @author mateusfv
- */
 public class Usuario {
 	//attributes
 	private String nome;
@@ -13,15 +10,16 @@ public class Usuario {
 	private char genero;
 	
 	//methods
-	public Usuario() {}
 	public Usuario(String email, String senha) {
 		this.email = email;
 		this.senha = senha;
 	}
-	public Usuario consultarUsuario(String login, String senha) {
-		return null; //TODO implement
+	public Usuario consultarUsuario(String email, String senha) {
+		return null;
 	}
-	
+	public void registrarUsuario(String email, String senha) {
+		//TODO
+	}
 	public String getNome() {
 		return nome;
 	}

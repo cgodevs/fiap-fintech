@@ -1,39 +1,32 @@
-package br.com.fintech.fiap;
-
+package br.com.fiap.fintech;
 import java.time.LocalDate;
-import java.util.Date;
-
-/**
- * @author mateusfv
- */
 
 public class Cartao {
 	//attributes
-	private long numeroCartao;
-	private int idCartao;
-	private short codSeguranca;
-	private char tipoCartao;
+	private long numero;
 	private String nomeTitular;
+	private short codSeguranca;
 	private LocalDate dataExpiracao;
+	private char tipoCartao;
+	private int id;
 	private Usuario usuario;
 	
 	//methods
-	public Cartao() {}
-	public Cartao(long numero, String nome, short codigo, LocalDate data, char tipo, Usuario usuario) {
-		this.numeroCartao = numero;
+	public Cartao(long numero, String nome, short cod, LocalDate data, char tipo, Usuario usuario) {
+		this.numero = numero;
 		this.nomeTitular = nome;
-		this.codSeguranca = codigo;
+		this.codSeguranca = cod;
 		this.dataExpiracao = data;
 		this.tipoCartao = tipo;
 		this.usuario = usuario;
 	}
 
-	public long getNumeroCartao() {
-		return numeroCartao;
+	public long getNumero() {
+		return numero;
 	}
 
-	public void setNumeroCartao(long numeroCartao) {
-		this.numeroCartao = numeroCartao;
+	public void setNumero(long numero) {
+		this.numero = numero;
 	}
 
 	public String getNomeTitular() {
@@ -68,16 +61,8 @@ public class Cartao {
 		this.tipoCartao = tipoCartao;
 	}
 
-	public int getIdCartao() {
-		return idCartao;
-	}
-	
-	public void registrarCartao() {
-		return;
-	}
-	
-	public Cartao consultar(int id) {
-		return null;
+	public int getId() {
+		return id;
 	}
 
 }
