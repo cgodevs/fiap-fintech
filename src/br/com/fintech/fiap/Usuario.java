@@ -1,4 +1,4 @@
-package br.com.fiap.fintech;
+package br.com.fintech.fiap;
 
 public class Usuario {
 	//attributes

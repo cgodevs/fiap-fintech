@@ -1,4 +1,4 @@
-package br.com.fiap.fintech;
+package br.com.fintech.fiap;
 import java.time.LocalDate;
 
 public class Cartao {
