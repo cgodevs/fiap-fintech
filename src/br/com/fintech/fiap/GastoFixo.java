@@ -26,8 +26,20 @@ public class GastoFixo extends Gasto {
 	public GastoFixo() {}
 	public GastoFixo(LocalDate dataGasto, Categoria categoria, String descricao, double valorFixo, int periodicidade, int[] diaCobrancaDefinidos) {
 		super(dataGasto, categoria, descricao);
-		this.valorFixo = valorFixo;
-		this.periodicidade = periodicidade;
+		this.setValorFixo(valorFixo);
+		this.setPeriodicidade(periodicidade);
 		this.diaCobrancaDefinidos = diaCobrancaDefinidos;
+	}
+	public double getValorFixo() {
+		return valorFixo;
+	}
+	public void setValorFixo(double valorFixo) {
+		this.valorFixo = valorFixo;
+	}
+	public int getPeriodicidade() {
+		return periodicidade;
+	}
+	public void setPeriodicidade(int periodicidade) {
+		this.periodicidade = periodicidade;
 	}
 }

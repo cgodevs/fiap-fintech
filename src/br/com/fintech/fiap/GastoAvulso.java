@@ -10,6 +10,12 @@ public class GastoAvulso extends Gasto {
 	public GastoAvulso() {}
 	public GastoAvulso(LocalDate dataGasto, Categoria categoria, String descricao, double valorGastoAvulso) {
 		super(dataGasto, categoria, descricao);
+		this.setValorGastoAvulso(valorGastoAvulso);
+	}
+	public double getValorGastoAvulso() {
+		return valorGastoAvulso;
+	}
+	public void setValorGastoAvulso(double valorGastoAvulso) {
 		this.valorGastoAvulso = valorGastoAvulso;
 	}	
 }
