@@ -1,11 +1,9 @@
-package br.com.fiap.fintech;
+package br.com.fintech.fiap;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 
-public abstract class Receita implements Serializable {
-	private static final long serialVersionUID = 1L;
+public abstract class Receita {
 	private int id;
 	private LocalDate dataReceita;
 	private LocalDate dataRegistro;
@@ -14,7 +12,7 @@ public abstract class Receita implements Serializable {
 	
 	public Receita() {}
 	
-	public void Receita(int id, LocalDate dataReceita, Categoria categoria, String descricao) {
+	public Receita(int id, LocalDate dataReceita, Categoria categoria, String descricao) {
 		this.id = id;
 		this.dataReceita = dataReceita;
 		this.dataRegistro = LocalDate.now();

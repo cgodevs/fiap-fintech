@@ -1,9 +1,8 @@
-package br.com.fiap.fintech;
+package br.com.fintech.fiap;
 
 import java.time.LocalDate;
 
 public class ReceitaFixa extends Receita {
-	private static final long serialVersionUID = 1L;
 	private double valorFixo;
 	private int periodicidade;
 	private int[] diaGanhoDefinidos;
